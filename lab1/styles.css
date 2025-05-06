@@ -1,0 +1,193 @@
+.event-banner-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1em;
+}
+
+.event-banner {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1em;
+}
+
+.event-banner img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.event-banner-info h3 {
+  margin-top: 0;
+}
+
+.event-banner-info p {
+  margin: 0.3em 0;
+}
+
+/* Адаптив */
+@media screen and (max-width: 600px) {
+  .event-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .event-banner img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 1em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+}
+
+.event-card {
+  background-color: white;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.event-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Квадратна форма */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5em;
+}
+
+footer {
+  margin-top: 2em;
+}
+
+/* 🔹 Стилі для сторінки "Мої бронювання" */
+.booking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1em;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* розтягується на всю висоту між header і footer */
+}
+
+
+.booking-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+}
+
+.booking-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.booking-info h3 {
+  margin-top: 0;
+}
+
+.booking-info p {
+  margin: 0.2em 0;
+}
+
+/* 📱 Медіа-запит для планшетів (до 768px) */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .event-card {
+    font-size: 0.95em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr; /* 🔁 Одна колонка на маленькому екрані */
+  }
+
+  .event-card {
+    padding: 1em;
+    font-size: 0.95em;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+  }
+}
+

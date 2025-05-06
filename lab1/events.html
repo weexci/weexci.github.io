@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Події</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1em;
+      padding: 1em;
+    }
+    .event-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Майбутні події</h1>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="bookings.html">Мої бронювання</a>
+      <a href="index.html#about">Про нас</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="grid">
+      <article class="event-card">
+        <img src="images/onuka.png" alt="Концерт ONUKA">
+        <h3>Концерт ONUKA</h3>
+        <p>Дата: 10.05.2025</p>
+        <p>Місце: Київ, Палац Україна</p>
+        <p>Ціна: 500 грн</p>
+        <button class="book-btn">Забронювати квиток</button>
+      </article>      
+      <article class="event-card">
+        <img src="images/центр_довженка.png" alt="Форум Освіта майбутнього">
+        <h3>Форум "Освіта майбутнього"</h3>
+        <p>Дата: 15.06.2025</p>
+        <p>Місце: Львів, Центр Довженка</p>
+        <p>Ціна: 300 грн</p>
+        <button class="book-btn">Забронювати квиток</button>
+      </article>
+      <article class="event-card">
+        <img src="images/гамлет.png" alt="Вистава Гамлет">
+        <h3>Вистава "Гамлет"</h3>
+        <p>Дата: 20.06.2025</p>
+        <p>Місце: Одеса, Театр ім. В. Василька</p>
+        <p>Ціна: 400 грн</p>
+        <button class="book-btn">Забронювати квиток</button>
+      </article>
+      <article class="event-card">
+        <img src="images/фестиваль_їжі.png" alt="Фестиваль вуличної їжі">
+        <h3>Фестиваль вуличної їжі</h3>
+        <p>Дата: 01.07.2025</p>
+        <p>Місце: Харків, Парк Горького</p>
+        <p>Ціна: 200 грн</p>
+        <button class="book-btn">Забронювати квиток</button>
+      </article>
+      <article class="event-card">
+        <img src="images/конференція.png" alt="Конференція Digital Ukraine">
+        <h3>Конференція "Digital Ukraine"</h3>
+        <p>Дата: 12.07.2025</p>
+        <p>Місце: Дніпро, IT HUB</p>
+        <p>Ціна: 450 грн</p>
+        <button class="book-btn">Забронювати квиток</button>
+      </article>
+      <article class="event-card">
+        <img src="images/кінопоказ.png" alt="Кінопоказ Українське кіно">
+        <h3>Кінопоказ "Українське кіно"</h3>
+        <p>Дата: 22.07.2025</p>
+        <p>Місце: Вінниця, кінотеатр "Родина"</p>
+        <p>Ціна: 250 грн</p>
+        <button class="book-btn">Забронювати квиток</button>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Контактна інформація: info@tickets.ua | +380 67 123 4567</p>
+  </footer>
+</body>
+</html>
